@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Mahasiswa</title>
+</head>
+<body>
+
+	<form action="mhs.php" method="post">
+		<table>
+			<tr>
+				<td>NIM</td>
+				<td>: <input type="text" name="nim"></td>
+			</tr>
+			<tr>
+				<td>Nama</td>
+				<td>: <input type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>Jenis kelamin</td>
+				<td>:
+					laki-laki<input type="radio" name="jk" id="laki" value="laki-laki">
+					perempuan<input type="radio" name="jk" id="perempuan" value="perempuan">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Alamat : <br>
+					<textarea name="alamat" id="alamat" cols="50" rows="2" style="width: 200px; height: 50px; resize: none;"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Program studi : <br>
+					<select name="prodi" id="prodi">
+						<option value="sistem informasi">Sistem Informasi</option>
+						<option value="matematika">Matematika</option>
+						<option value="fisika">Fisika</option>
+						<option value="biologi">Biologi</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Bahasa pemrograman yang dikuasasi : <br>
+					<input type="checkbox" name="lang[]" value="Java">Java <br>
+					<input type="checkbox" name="lang[]" value="PHP">PHP <br>
+					<input type="checkbox" name="lang[]" value="Python">python <br>
+					<input type="checkbox" name="lang[]" value="Kotlin">Kotlin <br>
+				</td>
+			</tr>
+		</table> <br>
+		<input type="submit" value="Kirim">
+	</form>
+
+</body>
+</html>
